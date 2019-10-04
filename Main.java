@@ -14,14 +14,14 @@ public class Main {
 		int temp = 0;
 		while(i<(n+1) && temp<(n*n)) {
 		// Ham Random Ten Xe
-		String[] objects = { "Honda", "Mecedes-Benz", "Mazda", "Lexus" };
+			String[] objects = { "Honda", "Mecedes-Benz", "Mazda", "Lexus" };
 
-	       int length = objects.length;
+	     	 	 int length = objects.length;
 	       
-	           int rand = (int) (Math.random() * length);
+	          	int rand = (int) (Math.random() * length);
 
 	        // Radom ID XE
-	           Random rd = new Random();   // khai báo 1 đối tượng Random
+	         	  Random rd = new Random();   // tạo biến random rd 
 	   			int number = rd.nextInt(100);
 	   			Cars xe = new Cars(objects[rand], number);
 	   			System.out.println("Thong bao co them xe vua vao Queue ");
